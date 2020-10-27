@@ -21,13 +21,17 @@ public class Progress : MonoBehaviour
 
     void OnGUI()
     {
+        Debug.Log("width" + Screen.width);
+        Debug.Log("h" + Screen.height);
+
         //draw the background:
-        GUI.BeginGroup(new Rect(pos.x, pos.y, size.x, size.y));
+        GUI.BeginGroup(new Rect(pos.x,pos.y, size.x, size.y));
         GUI.Box(new Rect(0, 0, size.x, size.y), backgroundTex, GUIStyle.none);
         //draw the filled-in part:
         GUI.BeginGroup(new Rect(0, 0, size.x * barDisplay, size.y));
         GUI.Box(new Rect(0, 0, size.x, size.y), foregroundTex, GUIStyle.none);
         GUI.EndGroup();
+
         GUI.BeginGroup(new Rect(0, 0, size.x, size.y));
         GUI.Label(new Rect(0, 0, size.x, size.y), progressText);
         GUI.EndGroup();

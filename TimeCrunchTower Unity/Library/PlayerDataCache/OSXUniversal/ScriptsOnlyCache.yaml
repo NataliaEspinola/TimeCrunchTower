@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.SpriteShape.Runtime.dll:
+    - UnityEngine.U2D.SpriteShape
     - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
@@ -65,23 +66,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 12878}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 13496}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 13640}
+      Script: {instanceID: 12898}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 13518}
     - Class: 114
-      Script: {instanceID: 16392}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 56488}
+      Script: {instanceID: 14276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,21 +121,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 12878}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 13640}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 12898}
     - Class: 114
-      Script: {instanceID: 56488}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 56490}
+      Script: {instanceID: 14276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,33 +176,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11420}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 13640}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 11766}
     - Class: 114
-      Script: {instanceID: 16382}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 16384}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 16386}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 16388}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 16390}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 16392}
+      Script: {instanceID: 13302}
     - Class: 114
-      Script: {instanceID: 16394}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 16396}
+      Script: {instanceID: 13836}
     - Class: 114
-      Script: {instanceID: 16398}
+      Script: {instanceID: 14062}
+    - Class: 114
+      Script: {instanceID: 14276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,6 +276,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpikeTrapScript
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -321,6 +330,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: b581c5d5c4ed53feb2ae760c65fee90b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharactersBase
+  - hash:
+      serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -331,6 +346,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: dc5cc4068c2ac8de7c2e794e5305df26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterSelector
   - hash:
       serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
@@ -357,10 +378,22 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeedPowerUp
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: b7221099f396fc105443ec010efd3ebc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BossDoorScript
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -409,6 +442,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlatformerCamaraMovement
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -471,6 +510,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JumpBootsScript
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -483,10 +528,22 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: 3d233503cac6d610b40feb1ce173f192
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Team
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -573,6 +630,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExtraTimeClockScript
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -609,6 +672,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 2f3a6c0186996d4ae82b6b5f04427aae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlatformerPlayerController
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -619,6 +688,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HeartPowerUpScript
   - hash:
       serializedVersion: 2
       Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
@@ -715,78 +790,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpikeTrapScript
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpeedPowerUp
-  - hash:
-      serializedVersion: 2
-      Hash: b7221099f396fc105443ec010efd3ebc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BossDoorScript
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlatformerCamaraMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JumpBootsScript
-  - hash:
-      serializedVersion: 2
-      Hash: 3d233503cac6d610b40feb1ce173f192
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TimerScript
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExtraTimeClockScript
-  - hash:
-      serializedVersion: 2
-      Hash: 2f3a6c0186996d4ae82b6b5f04427aae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlatformerPlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HeartPowerUpScript
-  - hash:
-      serializedVersion: 2
-      Hash: b581c5d5c4ed53feb2ae760c65fee90b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CharactersBase
-  - hash:
-      serializedVersion: 2
-      Hash: dc5cc4068c2ac8de7c2e794e5305df26
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CharacterSelector
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Team
   platform: 2
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
