@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 30790343d0d844657b1bc4045951a59e
+    path: Assets/Scenes/Menu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Fight.unity
+    guid: c22df0da59c584bc6bc078f9477049eb
   - enabled: 1
     path: Assets/Scenes/Platformer Scene.unity
     guid: 96f26023cc93dbb459299d59b33fdb00
   - enabled: 1
-    path: Assets/Scenes/FightOne.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Platformer Scene 2.unity
+    guid: 7364cce348d1f0e40bd8d7e7f78b9700
   m_configObjects: {}

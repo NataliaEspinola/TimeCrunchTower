@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class SpeedPowerUp : MonoBehaviour
 {
-
+    public float powerUpTime = 20;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlatformerPlayerController pm = collision.gameObject.GetComponent<PlatformerPlayerController>();
-            pm.speedPwrUpTime = 30;
+            PlatformerPlayerStateController ps = collision.gameObject.GetComponent<PlatformerPlayerStateController>();
+            ps.speedPwrUpTime = powerUpTime;
             Object.Destroy(this.gameObject);
         }
     }

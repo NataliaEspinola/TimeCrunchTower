@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class JumpBootsScript : MonoBehaviour
 {
-
+    public float powerUpTime = 20;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlatformerPlayerController pm = collision.gameObject.GetComponent<PlatformerPlayerController>();
-            pm.jumpPwrUpTime = 30;
+            PlatformerPlayerStateController pm = collision.gameObject.GetComponent<PlatformerPlayerStateController>();
+            pm.jumpPwrUpTime = powerUpTime;
             Object.Destroy(this.gameObject);
         }
     }

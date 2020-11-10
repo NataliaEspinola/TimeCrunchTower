@@ -9,31 +9,34 @@ public class Progress : MonoBehaviour
         Mana
     }
     
-    public Vector2 pos;
-    public Vector2 size;
     private Texture2D foregroundTex;
     private Texture2D backgroundTex;
-    private CharactersBase character;
+    private Character character;
     public ProgressType type;
+
+    float sizeX;
+    float sizeY;
+
+    private float yMult;
 
     private string progressText;
     private float barDisplay; //current progress
 
     void OnGUI()
     {
-        Debug.Log("width" + Screen.width);
-        Debug.Log("h" + Screen.height);
-
+        Vector2 pos = Camera.main.WorldToScreenPoint(character.transform.position);
+        sizeX = Screen.width * 0.1f;
+        sizeY = Screen.height * 0.05f;
         //draw the background:
-        GUI.BeginGroup(new Rect(pos.x,pos.y, size.x, size.y));
-        GUI.Box(new Rect(0, 0, size.x, size.y), backgroundTex, GUIStyle.none);
+        GUI.BeginGroup(new Rect(pos.x - sizeX/2, Screen.height - pos.y - sizeY * yMult, sizeX, sizeY));
+        GUI.Box(new Rect(0, 0, sizeX, sizeY), backgroundTex, GUIStyle.none);
         //draw the filled-in part:
-        GUI.BeginGroup(new Rect(0, 0, size.x * barDisplay, size.y));
-        GUI.Box(new Rect(0, 0, size.x, size.y), foregroundTex, GUIStyle.none);
+        GUI.BeginGroup(new Rect(0, 0, sizeX * barDisplay, sizeY));
+        GUI.Box(new Rect(0, 0, sizeX, sizeY), foregroundTex, GUIStyle.none);
         GUI.EndGroup();
 
-        GUI.BeginGroup(new Rect(0, 0, size.x, size.y));
-        GUI.Label(new Rect(0, 0, size.x, size.y), progressText);
+        GUI.BeginGroup(new Rect(0, 0, sizeX, sizeY));
+        GUI.Label(new Rect(0, 0, sizeX, sizeY), progressText);
         GUI.EndGroup();
         GUI.EndGroup();
     }
@@ -106,9 +109,20 @@ public class Progress : MonoBehaviour
 
     void Start()
     {
-        character = this.GetComponent<CharactersBase>();
-        foregroundTex = MakeTex((int) size.x, (int) size.y, GetForegroundColor());
-        backgroundTex = MakeTex((int)size.x, (int)size.y, Color.black);
+        if (type == ProgressType.Health)
+        {
+            yMult = 3.5f;
+        }
+        else
+        {
+            yMult = 2.5f;
+        }
+
+        sizeX = Screen.width * 0.1f;
+        sizeY = Screen.height * 0.05f;
+        character = this.GetComponent<Character>();
+        foregroundTex = MakeTex((int)sizeX, (int)sizeY, GetForegroundColor());
+        backgroundTex = MakeTex((int)sizeX, (int)sizeY, Color.black);
     }
 
     void Update()

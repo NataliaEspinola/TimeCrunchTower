@@ -11,7 +11,7 @@ public class BossDoorScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameObject timerObject = GameObject.FindWithTag("Timer");
-            GameState.timeLeft = timerObject.GetComponent<TimerScript>().timeLeft;
+            StateManager.timeLeft = timerObject.GetComponent<TimerScript>().timeLeft;
             SceneManager.LoadScene(nextSceneName);
         }
     }

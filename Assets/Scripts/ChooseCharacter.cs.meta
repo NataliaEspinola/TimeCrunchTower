@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: d4cd74f915500a84689218fd9ebd7fe0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Selections: {instanceID: 0}
+  - btnwarrior: {instanceID: 0}
+  - btnwizard: {instanceID: 0}
+  - btnthief: {instanceID: 0}
+  - btnhealer: {instanceID: 0}
+  - plusAtk: {instanceID: 0}
+  - plusDef: {instanceID: 0}
+  - play: {instanceID: 0}
+  - warrior: {instanceID: 0}
+  - wizard: {instanceID: 0}
+  - thief: {instanceID: 0}
+  - healer: {instanceID: 0}
+  - warriorSprite: {fileID: 21300000, guid: 82f931d54f6be8b4dbc0d35b5d361a7c, type: 3}
+  - wizardSprite: {fileID: 21300000, guid: 4a6dc77cfd8d1d4409a9556236c003ee, type: 3}
+  - thiefSprite: {fileID: 21300000, guid: ecd1ecb1bf514e44a800299d499220b9, type: 3}
+  - healerSprite: {instanceID: 0}
+  - image1: {instanceID: 0}
+  - image2: {instanceID: 0}
+  - image3: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - desText: {instanceID: 0}
+  - classText: {instanceID: 0}
+  - atkText: {instanceID: 0}
+  - defText: {instanceID: 0}
+  - healthText: {instanceID: 0}
+  - manaText: {instanceID: 0}
+  - skillText: {instanceID: 0}
+  - pointsText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
